@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .itemHeader {
+        @apply font-medium text-[28px] pb-2
+    }
+
+    .itemp {
+        @apply font-normal text-base leading-6 pb-4
+    }
+.iconItem{
+    @apply text-base size-10 border border-white rounded-full flex items-center justify-center 
+}
+.term{
+
+    @apply rounded-sm
+}
+.label{
+@apply absolute top-full left-0 text-start text-[#1ABC9C]  transition-all duration-500
+}
+.labelshow{
+    @apply absolute top-0 left-0 text-start text-[#1ABC9C]
+}
+}
+
+input::placeholder{
+    color:#595C5F;
+}
+
+
+.active{
+    @apply bg-[#1ABC9C] rounded-md px-3 py-2
+}
